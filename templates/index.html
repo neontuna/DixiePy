@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>DixiePass!</title>
+		<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+<body>
+<script src="/static/js/bootstrap.min.js"></script>
+
+<div class="container">
+<h1>Let's print our password list</h1> <br><br>
+<p>
+{% for i in range(20) %}
+	{{ passwordList.pop() }}<br>
+{% endfor %}
+</p>
+</div>
+</body>
+</html>
